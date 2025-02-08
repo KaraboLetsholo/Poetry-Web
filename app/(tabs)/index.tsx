@@ -8,46 +8,70 @@ import { ThemedView } from '@/components/ThemedView';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+      headerBackgroundColor={{ light: '#FFC0CB', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
+          source={require('@/assets/images/hearts.jpg')}
+          style={{
+            height: 1500,
+            width: 1400,
+        }}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">Welcome to Poetry Night with KB!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+        <ThemedText type="subtitle">Happy Valentines : Karabo </ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12'
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
+        Ah February, Coming right before March and April<br />
+        Feels much like it is a great beast which does not fell<br/>
+        Always having the ground shaking and the fracturing of the earth<br/>
+        And from the cracks she arose<br/>
+        Lady love, her body slim and beautiful adorned by her sling and bows<br/>
+        Like the Cupid she is aiming her enchanting arrows to two beings with sorrow<br/>
+        For their hearts beat as one, brains clustered with thoughts of each other<br/>
+        But unfortunately cannot muster the courage to confess to one another<br/>
+
+        <br/>
+
+        Accompanying Lady love is her jubilant exuberant exciting friend<br/>
+        One who loves celebrations and moments when people connect<br/>
+        He wears a funny red-and-white checkered hat <br/>
+        And with patches of hearts and roses on his pink and white shirt<br/>
+        He loves to chit chat about love and his name is Valentine<br/>
+        Unlike Lady love whose service runs indefinitely throughout the year<br/>
+        His only runs once the 14th of every month. 
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle">Situation-ships: Karabo</ThemedText>
         <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
+        My heart yearns for yours<br/>
+        Our souls wish to be whole with one another<br/>
+        My brain tells me that you are the right one<br/>
+        But given my personality, circumstances and age<br/>
+        My brains also tells me that the timing is not the right one<br/>
+        I get everything at your expense and the longer this continues<br/>
+        The harder the blow and the agony inflicted upon you<br/>
+        But for some reason I still yet can't explain<br/>
+        My brain tells me that ending things might be the worst mistake<br/>
+
+        <br/>
+
+        Oh, I give you my all but you act so indifferent and put me at an arms length<br/>
+        I don't know what to give because I've you my heart, soul, body and strength<br/>
+        But for some reason, It seems like after everything I do you're still unimpressed<br/>
+        A part of me wants to end it all and start afresh<br/>
+        But another tells me that I'd rather have a piece of you rather than none at all<br/>
+        Such is the case in the life of a situation-ship, feels like imprisonment
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Untitled: Anonymous</ThemedText>
         <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+          Coming Soon...
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
@@ -61,8 +85,14 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   stepContainer: {
+    backgroundColor : '#FFC0CB',
     gap: 8,
     marginBottom: 8,
+    borderEndEndRadius : 10,
+    borderBottomStartRadius : 10,
+    borderBottomLeftRadius : 10,
+    borderTopRightRadius : 10,
+    borderTopLeftRadius : 10,
   },
   reactLogo: {
     height: 178,
